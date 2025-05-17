@@ -43,7 +43,8 @@ header.ativado .linha2 {
 }
 
 .botaoPrimario {
-    @apply bg-[#E10600] shadow-sm shadow-[#E10600]
+    box-shadow: 0 0 13px #E10600;
+    @apply bg-[#E10600];
 }
 
 .linha {
@@ -71,9 +72,29 @@ header.ativado .linha2 {
 }
 
 .textoSubtitulo0 {
-    @apply font-bold px-2
+    @apply font-bold md:px-2 py-2 md:py-0
 }
 
 .areaTextoSubtitulo {
-    @apply flex items-center justify-between
+    @apply flex md:items-center md:justify-between flex-col md:flex-row
+}
+
+.contentServicos {
+    @apply flex flex-col items-center md:flex-row md:justify-center mt-3
+}
+
+.cardServico {
+    @apply bg-[#212121] m-1 p-4 rounded-[8px] w-[80%] border-[#2E2C2C] md:w-[18%] md:m-2
+}
+
+.iconeServico {
+    @apply text-[#E10600] text-[20px]
+}
+
+.nomeServico {
+    @apply text-[#B0B0B0] font-bold font-roboto my-2 border-l-2 border-l-[#E10600] pl-2
+}
+
+.textoServico {
+    @apply text-white font-extralight font-inter
 }
