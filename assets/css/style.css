@@ -195,6 +195,9 @@
   .z-20 {
     z-index: 20;
   }
+  .z-\[1000\] {
+    z-index: 1000;
+  }
   .m-auto {
     margin: auto;
   }
