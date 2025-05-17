@@ -1,1 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+
+@theme {
+    --font-inter: "Inter", system-ui, sans-serif;
+    --font-roboto: "Roboto", system-ui, sans-serif;
+}
+
+header.ativado .navMobile {
+    @apply translate-x-0
+}
+
+.linha {
+    @apply relative
+}
+
+header.ativado .linha0 {
+    @apply right-2
+}
+
+header.ativado .linha2 {
+    @apply left-2
+}
+
+.navMobile {
+    @apply flex items-center flex-col top-0 absolute bg-[url(../img/bg_menu_mobile.png)] bg-center bg-no-repeat backdrop-blur-2xl h-screen justify-around right-0 w-screen translate-x-full duration-800 ease-in delay-150 md:static md:flex md:flex-row md:translate-x-0 md:h-auto md:bg-transparent md:w-auto md:gap-2 pt-4 md:bg-none md:pt-0
+}
+
+.linksMenu {
+    @apply font-inter font-medium hover:text-[#e10600] text-white duration-400 ease-in
+}
+
+.navBotoes {
+    @apply bg-[#212121] p-1 rounded-full border-2 border-[#2E2C2C] w-max
+}
+
+.botao {
+    @apply rounded-full p-1 font-inter font-bold text-white cursor-pointer duration-400 ease-in px-2
+}
+
+.botaoSecundario {
+    @apply hover:text-[#E10600]
+}
+
+.botaoPrimario {
+    @apply bg-[#E10600] shadow-sm shadow-[#E10600]
+}
+
+.linha {
+    @apply bg-[#E10600] w-[2rem] h-[4px] m-1 rounded-full
+}
+
+.textoColorido {
+    @apply text-[#E10600] text-shadow-md text-shadow-[#E10600]
+}
+
+.textoDestaque {
+    @apply font-bold
+}

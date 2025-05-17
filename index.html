@@ -10,7 +10,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="author" content="CLC Tecnologias Inc.">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Multisserviços | A energia do futuro, hoje.</title>
+    <title>Multiserviços | A energia do futuro, hoje.</title>
     <link rel="shortcut icon" href="assets/img/ico.ico" type="image/x-icon">
     <meta name="keywords" content="Centro Multisserviços, centro de serviços elétricos, eletricidade">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -18,6 +18,48 @@
     <meta property="og:description" content="Centro Multisserviços - Prestação de Serviços de Instalação e Manutenção Elétrica na Sapú II e Vila Flor">
 </head>
 <body>
-    
+    <header class="flex md:px-17 justify-between bg-[#151515b7] items-center md:w-[98%] h-[4rem] md:rounded-full md:m-[1rem] fixed backdrop-blur-xs border-2 border-[#2E2C2C] shadow-[#2E2C2C] w-full px-8">
+        <nav class="navMobile">
+            <a href="#" class="linksMenu">Página Inicial</a>
+            <a href="#" class="linksMenu">Quem Somos?</a>
+            <a href="#" class="linksMenu">Serviços</a>
+            <a href="#" class="linksMenu">Extras</a>
+            <nav class="navBotoes md:hidden">
+                <a href="#"><button class="botao botaoSecundario">Entrar</button></a>
+                <a href="#"><button class="botao botaoPrimario">Inicar Sessão</button></a>
+            </nav>
+        </nav>
+        <nav class="z-1">
+            <a href="index.html"><img src="assets/img/logo.png" alt="imagem da logo do multisserviços" srcset="assets/img/logo.png" class="w-[120px]"></a>
+        </nav>
+        <nav class="hidden md:block">
+            <nav class="navBotoes">
+                <a href="#"><button class="botao botaoSecundario">Entrar</button></a>
+                <a href="#"><button class="botao botaoPrimario">Inicar Sessão</button></a>
+            </nav>
+        </nav>
+
+        <nav class="md:hidden p-2 z-1 menuHamburguer cursor-pointer ease-linear delay-75 duration-200">
+            <div class="linha linha0"></div>
+            <div class="linha"></div>
+            <div class="linha linha2"></div>
+        </nav>
+    </header>
+
+    <main class="bg-[#151515] px-8 pt-[6rem] md:px-17">
+        <section class="md:flex md:h-screen items-center">
+            <nav class="flex flex-col items-center text-center md:text-left md:items-start md:w-[95%]">
+                <h1 class="text-[28pt] p font-bold font-roboto text-white md:text-[35pt]">A <span class="textoColorido">Energia</span> do Futuro, hoje<span class="textoColorido">.</span></h1>
+                <p class="font-light my-4 text-white">O <span class="textoDestaque">Centro Multiserviços</span> é uma empresa especializada em soluções completas na área de eletricidade, com foco na distribuição eficiente e segura de energia elétrica. Atuamos com excelência no planejamento, instalação e manutenção de sistemas elétricos, oferecendo serviços de alta qualidade para residências, empresas, indústrias e instituições públicas. Nosso objetivo é levar energia com confiança, inovação e responsabilidade, promovendo o desenvolvimento sustentável e o bem-estar da comunidade.</p>
+                <nav class="navBotoes">
+                    <a href="#"><button class="botao botaoSecundario">Entrar</button></a>
+                    <a href="#"><button class="botao botaoPrimario">Inicar Sessão</button></a>
+                </nav>
+            </nav>
+            <nav>
+                <img src="assets/img/img_hero.gif" alt="imagem de uma engenheira elétrica segurando uma lâmpada" srcset="assets/img/img_hero.gif">
+            </nav>
+        </section>
+    </main>
 </body>
 </html>
