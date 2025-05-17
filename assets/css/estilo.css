@@ -57,3 +57,23 @@ header.ativado .linha2 {
 .textoDestaque {
     @apply font-bold
 }
+
+.textoDestaque1 {
+    @apply text-[#B0B0B0]
+}
+
+.subtitulo {
+    @apply text-[25pt] font-roboto font-bold text-white
+}
+
+.textoSubtitulo {
+    @apply text-white font-inter font-extralight
+}
+
+.textoSubtitulo0 {
+    @apply font-bold px-2
+}
+
+.areaTextoSubtitulo {
+    @apply flex items-center justify-between
+}

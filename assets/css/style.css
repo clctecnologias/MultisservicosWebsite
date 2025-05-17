@@ -8,11 +8,9 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-green-400: oklch(79.2% 0.209 151.711);
     --color-white: #fff;
     --spacing: 0.25rem;
-    --text-4xl: 2.25rem;
-    --text-4xl--line-height: calc(2.5 / 2.25);
+    --font-weight-extralight: 200;
     --font-weight-light: 300;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
@@ -207,9 +205,6 @@
   .justify-between {
     justify-content: space-between;
   }
-  .justify-center {
-    justify-content: center;
-  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -299,36 +294,6 @@
       height: 100vh;
     }
   }
-  .md\:w-\[50\%\] {
-    @media (width >= 48rem) {
-      width: 50%;
-    }
-  }
-  .md\:w-\[50\] {
-    @media (width >= 48rem) {
-      width: 50;
-    }
-  }
-  .md\:w-\[70\%\] {
-    @media (width >= 48rem) {
-      width: 70%;
-    }
-  }
-  .md\:w-\[80\%\] {
-    @media (width >= 48rem) {
-      width: 80%;
-    }
-  }
-  .md\:w-\[85\%\] {
-    @media (width >= 48rem) {
-      width: 85%;
-    }
-  }
-  .md\:w-\[90\%\] {
-    @media (width >= 48rem) {
-      width: 90%;
-    }
-  }
   .md\:w-\[95\%\] {
     @media (width >= 48rem) {
       width: 95%;
@@ -349,11 +314,6 @@
       border-radius: calc(infinity * 1px);
     }
   }
-  .md\:bg-green-400 {
-    @media (width >= 48rem) {
-      background-color: var(--color-green-400);
-    }
-  }
   .md\:px-17 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 17);
@@ -362,12 +322,6 @@
   .md\:text-left {
     @media (width >= 48rem) {
       text-align: left;
-    }
-  }
-  .md\:text-4xl {
-    @media (width >= 48rem) {
-      font-size: var(--text-4xl);
-      line-height: var(--tw-leading, var(--text-4xl--line-height));
     }
   }
   .md\:text-\[35pt\] {
@@ -517,6 +471,32 @@ header.ativado .linha2 {
 .textoDestaque {
   --tw-font-weight: var(--font-weight-bold);
   font-weight: var(--font-weight-bold);
+}
+.textoDestaque1 {
+  color: #B0B0B0;
+}
+.subtitulo {
+  font-family: var(--font-roboto);
+  font-size: 25pt;
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+}
+.textoSubtitulo {
+  font-family: var(--font-inter);
+  --tw-font-weight: var(--font-weight-extralight);
+  font-weight: var(--font-weight-extralight);
+  color: var(--color-white);
+}
+.textoSubtitulo0 {
+  padding-inline: calc(var(--spacing) * 2);
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
+}
+.areaTextoSubtitulo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 @property --tw-border-style {
   syntax: "*";
