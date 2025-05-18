@@ -10,6 +10,13 @@ links.forEach(link => {
     });
   });
 
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add("active");
+    });
+}, { threshold: 0.5 });
+document.querySelectorAll(".CardFundador").forEach(card => observer.observe(card));
+
 const videoPlayer = document.querySelector('.videoExplicativo');
 const playPauseButton = document.querySelector('.fa-play, .fa-pause');
 const backwardButton = document.querySelector('.fa-backward');

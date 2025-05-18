@@ -79,9 +79,12 @@ header.ativado .linha2 {
     @apply flex md:items-center md:justify-between flex-col md:flex-row
 }
 
+#servicos {
+    @apply bg-contain bg-no-repeat bg-center bg-[url("../../assets/img/bg_menu_mobile.png")]
+}
 
 .contentServicos {
-    @apply flex flex-row gap-2 justify-start m-4 overflow-x-auto scroll-smooth snap-x snap-mandatory;
+    @apply flex flex-row gap-2 justify-start m-4 overflow-x-auto scroll-smooth snap-x snap-mandatory ;
 }
 
 .contentServicos {
@@ -123,11 +126,19 @@ header.ativado .linha2 {
 }
 
 .contentAbout {
-    @apply flex flex-col items-center relative pt-5 bg-[url("../../assets/img/bg_menu_mobile.png")]
+    @apply flex flex-col items-center relative pt-5 
 }
 
 .cardFundador {
     @apply p-4 m-2 border-2 rounded-[8px] flex flex-col items-center text-center justify-center border-[#2E2C2C] w-[80%] md:w-[25%] mb-5 sticky top-[4rem] md:top-[8rem] z-10 bg-[#151515]
+}
+
+.cardFundador .imgFundador {
+    @apply md:grayscale-100 md:ease-in md:duration-300
+}
+
+.cardFundador:hover .imgFundador {
+    @apply md:grayscale-0
 }
 
 .nomeFundador {
