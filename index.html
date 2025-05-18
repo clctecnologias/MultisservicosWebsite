@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-AO">
+<html lang="pt-AO" class="scroll-smooth">
 <head>
     <meta charset="UTF-8"> 
     <meta property="og:type" content="website">
@@ -21,13 +21,13 @@
 <body>
     <header class="flex md:px-17 justify-between bg-[#151515b7] items-center md:w-[98%] h-[4rem] md:rounded-full md:m-[1rem] fixed backdrop-blur-xs md:border-2 md:border-[#2E2C2C] md:shadow-[#2E2C2C] w-full px-8 z-[1000]">
         <nav class="navMobile">
-            <a href="#" class="linksMenu">Página Inicial</a>
-            <a href="#" class="linksMenu">Quem Somos?</a>
-            <a href="#" class="linksMenu">Serviços</a>
-            <a href="#" class="linksMenu">Extras</a>
+            <a href="#" target="_top" class="linksMenu">Página Inicial</a>
+            <a href="#sobreNos" class="linksMenu">Quem Somos?</a>
+            <a href="#servicos" class="linksMenu">Serviços</a>
+            <a href="#rodape" class="linksMenu">Extras</a>
             <nav class="navBotoes md:hidden">
                 <a href="#"><button class="botao botaoSecundario">Entrar</button></a>
-                <a href="#"><button class="botao botaoPrimario">Inicar Sessão</button></a>
+                <a href="#"><button class="botao botaoPrimario">Iniciar Sessão</button></a>
             </nav>
         </nav>
         <nav class="z-1">
@@ -38,7 +38,7 @@
         <nav class="hidden md:block">
             <nav class="navBotoes">
                 <a href="#"><button class="botao botaoSecundario">Entrar</button></a>
-                <a href="#"><button class="botao botaoPrimario">Inicar Sessão</button></a>
+                <a href="#"><button class="botao botaoPrimario">Iniciar Sessão</button></a>
             </nav>
         </nav>
 
@@ -55,8 +55,8 @@
                 <h1 class="text-[28pt] p font-bold font-roboto text-white md:text-[35pt]">A <span class="textoColorido">Energia</span> do Futuro, hoje<span class="textoColorido">.</span></h1>
                 <p class="font-light my-4 text-white ">O <span class="textoDestaque">Centro Multiserviços</span> é uma empresa especializada em soluções completas na área de eletricidade, com foco na distribuição eficiente e segura de energia elétrica. Atuamos com excelência no planejamento, instalação e manutenção de sistemas elétricos, oferecendo serviços de alta qualidade para residências, empresas, indústrias e instituições públicas. Nosso objetivo é levar energia com confiança, inovação e responsabilidade, promovendo o desenvolvimento sustentável e o bem-estar da comunidade.</p>
                 <nav class="navBotoes">
-                    <a href="#"><button class="botao botaoSecundario">Entrar</button></a>
-                    <a href="#"><button class="botao botaoPrimario">Inicar Sessão</button></a>
+                    <a href="#sobreNos"><button class="botao botaoSecundario">Saber Mais</button></a>
+                    <a href="#video"><button class="botao botaoPrimario">Assistir Vídeo <i class="fa-solid fa-video"></i></button></a>
                 </nav>
             </nav>
             <nav>
@@ -64,7 +64,7 @@
             </nav>
         </section>
 
-        <section>
+        <section id="servicos">
             <h2 class="subtitulo">Nossos <span class="textoColorido">Serviços.</span></h2>
             <div class="areaTextoSubtitulo">
                 <nav>
@@ -139,7 +139,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="sobreNos">
             <h2 class="subtitulo">Sobre <span class="textoColorido">Nós.</span></h2>
             <div class="areaTextoSubtitulo">
                 <nav>
@@ -212,7 +212,7 @@
                     <p class="textoSubtitulo">Você precisa ver com seus próprios olhos como a energia do futuro já está mudando o presente. Assista ao nosso vídeo e descubra como o <span class="textoDestaque">Centro Multiserviços</span> está levando inovação, segurança e eficiência para os bairros de Luanda. Em poucos minutos, você vai entender por que somos referência em distribuição e instalação elétrica.</p>
                 </nav>
             </div>
-            <nav>
+            <nav id="video">
                 <video src="assets/video/video_site.mp4" class="videoExplicativo"></video>
                 <nav class="navControlesVideo flex justify-around text-red-500 items-center">
                     <nav class="text-[20px] flex gap-3.5">
@@ -223,14 +223,14 @@
                     </nav>
                     <nav>
                         <a href="assets/video/centro_multisserviços.mp4" download="video_centro_multiserviços">
-                           <button class="botao botaoPrimario">Baixar Vídeo</button>
+                           <button class="botao botaoPrimario">Baixar Vídeo <i class="fa-solid fa-download"></i></button>
                         </a>
                     </nav>
                 </nav>
             </nav>
         </section>
 
-        <footer class="pt-12 py-2.5">
+        <footer class="pt-12 py-2.5" id="rodape">
             <nav class="flex flex-col items-center justify-center text-center">
                 <a href="#" target="_top" class="flex items-center flex-col justify-center text-center">
                     <img src="assets/img/logo.png" alt="" srcset="" class="w-1/2 py-2.5 md:w-[40%]">
@@ -239,8 +239,8 @@
                 <div class="flex gap-2 flex-col font-inter text-[#B0B0B0] font-normal md:flex-row md:gap-6">
                     <a href="#">Termos e Condições</a>
                     <a href="#">Política de Privacidade</a>
-                    <a href="#">Sobre Nós</a>
-                    <a href="#">Termos e Condições</a>
+                    <a href="#sobreNos">Sobre Nós</a>
+                    <a href="#servicos">Nossos Serviços</a>
                 </div>
             </nav>
             <div class="flex flex-col items-center text-center md:flex-row md:justify-between md:pt-8">

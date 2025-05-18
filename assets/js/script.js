@@ -3,6 +3,13 @@ menuHamburguer.addEventListener("click", ()=> {
     document.querySelector("header").classList.toggle("ativado")
 })
 
+const links = document.querySelectorAll('.linksMenu');
+links.forEach(link => {
+    link.addEventListener('click', function () {
+      document.querySelector("header").classList.toggle("ativado")
+    });
+  });
+
 const videoPlayer = document.querySelector('.videoExplicativo');
 const playPauseButton = document.querySelector('.fa-play, .fa-pause');
 const backwardButton = document.querySelector('.fa-backward');
