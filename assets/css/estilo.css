@@ -175,7 +175,7 @@ header.ativado .linha2 {
 }
 
 .navInputs label {
-    @apply font-inter font-bold text-[#B0B0B0] absolute text-[11pt] left-3 top-[16%] bg-[#151515] px-0.5 ease-linear duration-300 sm:top-[44%]
+    @apply font-inter font-bold text-[#B0B0B0] absolute sm:text-[11pt] left-3 -top-4/12 bg-[#151515] px-0.5 ease-linear duration-300 sm:-top-[6%] md:top-[44%] text-[9pt]
 }
 
 .navInputs input {
@@ -190,5 +190,5 @@ header.ativado .linha2 {
 
 .contentNavInputs .navInputs input:focus + label,
 .contentNavInputs .navInputs input:not(:placeholder-shown) + label {
-    @apply text-[#E10600]  md:top-2
+    @apply text-[#E10600]  md:top-[2%]
 }

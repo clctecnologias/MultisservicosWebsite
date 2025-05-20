@@ -23,7 +23,7 @@
         <nav class="hidden md:block grayscale-100 hover:grayscale-0 ease-linear duration-500">
             <img src="../assets/img/img_formulario.jpg" alt="" srcset="" class="h-screen w-[55vw]">
         </nav>
-        <nav class="md:w-[50vw] bg-[#151515] flex flex-col items-center p-14 h-max md:h-screen overflow-y-scroll sm:overflow-hidden navAllContent ">
+        <nav class="md:w-[50vw] bg-[#151515] flex flex-col items-center p-14 h-max md:h-screen overflow-y-scroll sm:overflow-y-scroll md:overflow-y-scroll navAllContent ">
             <a href="#" class="flex items-center justify-center"><img src="../assets/img/logo.png" alt="" srcset="" class="md:w-[50%] w-[55%]"></a>
             <nav class="formContainer" id="formRegistro">
                 <form action="#">
@@ -33,17 +33,17 @@
                         <p class="pt-2.5 text-white font-inter font-extralight md:text-left text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos neque modi quidem tempore, ratione odit voluptas nostrum omnis eius provident recusandae necessitatibus nobis veritatis corrupti repellendus aperiam fugit praesentium quia.</p>
                         <div class="contentNavInputs">
                             <nav class="navInputs">
-                                <input type="text" placeholder="" id="usuarioRegistro">
+                                <input type="text" placeholder="" id="usuarioRegistro" required>
                                 <label for="usuarioRegistro">Nome do Usuário *</label>
                             </nav>
                             <nav class="navInputs mt-3 md:mt-auto">
-                                <input type="text" placeholder="" id="emailRegistro">
+                                <input type="text" placeholder="" id="emailRegistro" required>
                                 <label for="emailRegistro">E-mail *</label>
                             </nav>
                         </div>
                         <div class="contentNavInputs">
                             <nav class="navInputs">
-                                <input type="text" placeholder="" id="senhaRegistro">
+                                <input type="text" placeholder="" id="senhaRegistro" required>
                                 <label for="senhaRegistro">Palavra-Passe *</label>
                             </nav>
                         </div>
@@ -69,21 +69,21 @@
                         <p class="pt-2.5 text-white font-inter font-extralight md:text-left text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos neque modi quidem tempore, ratione odit voluptas nostrum omnis eius provident recusandae necessitatibus nobis veritatis corrupti repellendus aperiam fugit praesentium quia.</p>
                         <div class="contentNavInputs">
                             <nav class="navInputs">
-                                <input type="text" placeholder="" id="usuarioSessao">
+                                <input type="text" placeholder="" id="usuarioSessao" required>
                                 <label for="usuarioSessao">Nome do Usuário *</label>
                             </nav>
                             <nav class="navInputs mt-3 md:mt-auto">
-                                <input type="text" placeholder="" id="emailSessao">
+                                <input type="text" placeholder="" id="emailSessao" required>
                                 <label for="emailSessao">E-mail *</label>
                             </nav>
                         </div>
                         <div class="contentNavInputs">
                             <nav class="navInputs">
-                                <input type="text" placeholder="" id="senhaSessao">
+                                <input type="text" placeholder="" id="senhaSessao" required>
                                 <label for="senhaSessao">Palavra-Passe *</label>
                             </nav>
-                            <nav class="navInputs">
-                                <input type="text" placeholder="" id="confirmarSenhaSessao">
+                            <nav class="navInputs mt-3 md:mt-auto">
+                                <input type="text" placeholder="" id="confirmarSenhaSessao" required>
                                 <label for="confirmarSenhaSessao">Confimar palavra-Passe *</label>
                             </nav>
                         </div>
