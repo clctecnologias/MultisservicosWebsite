@@ -43,7 +43,7 @@ header.ativado .linha2 {
 }
 
 .botaoPrimario {
-    box-shadow: 0 0 13px #E10600;
+    box-shadow: 0 0 16px #E10600;
     @apply bg-[#E10600];
 }
 
@@ -134,11 +134,11 @@ header.ativado .linha2 {
 }
 
 .cardFundador .imgFundador {
-    @apply md:grayscale-100 md:ease-in md:duration-300
+    @apply sm:grayscale-100 sm:ease-linear duration-300 
 }
 
 .cardFundador:hover .imgFundador {
-    @apply md:grayscale-0
+    @apply sm:grayscale-0
 }
 
 .nomeFundador {
@@ -164,4 +164,31 @@ header.ativado .linha2 {
 
 .iconeSocialMedia {
     @apply hover:text-[#E10600] active:text-[#E10600] duration-200 ease-linear
+}
+
+.contentNavInputs {
+    @apply flex flex-wrap justify-center items-center mt-4 
+}
+
+.navInputs {
+    @apply flex flex-col gap-2.5 mx-7 relative
+}
+
+.navInputs label {
+    @apply font-inter font-bold text-[#B0B0B0] absolute text-[11pt] left-3 top-[16%] bg-[#151515] px-0.5 ease-linear duration-300 sm:top-[44%]
+}
+
+.navInputs input {
+    @apply border-[#B0B0B0] border-2 outline-0 text-white px-3 py-0.5 ease-linear duration-300 sm:mt-4
+}
+
+.contentNavInputs .navInputs input:focus,
+.contentNavInputs .navInputs input:hover,
+.contentNavInputs .navInputs input:not(:placeholder-shown) {
+    @apply border-2 border-[#E10600]
+}
+
+.contentNavInputs .navInputs input:focus + label,
+.contentNavInputs .navInputs input:not(:placeholder-shown) + label {
+    @apply text-[#E10600]  md:top-2
 }
