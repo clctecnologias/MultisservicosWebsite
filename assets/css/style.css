@@ -517,6 +517,11 @@
       margin: 1rem;
     }
   }
+  .md\:mt-0 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 0);
+    }
+  }
   .md\:mt-auto {
     @media (width >= 48rem) {
       margin-top: auto;
