@@ -230,6 +230,9 @@
   .h-\[100px\] {
     height: 100px;
   }
+  .h-\[220px\] {
+    height: 220px;
+  }
   .h-max {
     height: max-content;
   }
@@ -257,6 +260,12 @@
   .w-\[120px\] {
     width: 120px;
   }
+  .w-\[213px\] {
+    width: 213px;
+  }
+  .w-\[313px\] {
+    width: 313px;
+  }
   .w-full {
     width: 100%;
   }
@@ -274,6 +283,9 @@
   }
   .resize {
     resize: both;
+  }
+  .resize-none {
+    resize: none;
   }
   .flex-col {
     flex-direction: column;
@@ -495,11 +507,6 @@
       }
     }
   }
-  .sm\:overflow-hidden {
-    @media (width >= 40rem) {
-      overflow: hidden;
-    }
-  }
   .sm\:overflow-y-scroll {
     @media (width >= 40rem) {
       overflow-y: scroll;
@@ -583,16 +590,6 @@
   .md\:gap-6 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 6);
-    }
-  }
-  .md\:overflow-hidden {
-    @media (width >= 48rem) {
-      overflow: hidden;
-    }
-  }
-  .md\:overflow-y-hidden {
-    @media (width >= 48rem) {
-      overflow-y: hidden;
     }
   }
   .md\:overflow-y-scroll {
@@ -1061,7 +1058,7 @@ header.ativado .linha2 {
     top: 44%;
   }
 }
-.navInputs input {
+.navInputs input, textarea {
   border-style: var(--tw-border-style);
   border-width: 2px;
   border-color: #B0B0B0;
@@ -1078,12 +1075,12 @@ header.ativado .linha2 {
     margin-top: calc(var(--spacing) * 4);
   }
 }
-.contentNavInputs .navInputs input:focus, .contentNavInputs .navInputs input:hover, .contentNavInputs .navInputs input:not(:placeholder-shown) {
+.contentNavInputs .navInputs input:focus, .contentNavInputs .navInputs textarea:focus, .contentNavInputs .navInputs input:hover, .contentNavInputs .navInputs textarea:hover, .contentNavInputs .navInputs input:not(:placeholder-shown) .contentNavInputs .navInputs textarea:not(:placeholder-shown) {
   border-style: var(--tw-border-style);
   border-width: 2px;
   border-color: #E10600;
 }
-.contentNavInputs .navInputs input:focus + label, .contentNavInputs .navInputs input:not(:placeholder-shown) + label {
+.contentNavInputs .navInputs input:focus + label, .contentNavInputs .navInputs textarea:focus + label, .contentNavInputs .navInputs textarea:not(:placeholder-shown) + label, .contentNavInputs .navInputs input:not(:placeholder-shown) + label {
   color: #E10600;
   @media (width >= 48rem) {
     top: 2%;

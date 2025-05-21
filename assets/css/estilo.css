@@ -178,17 +178,23 @@ header.ativado .linha2 {
     @apply font-inter font-bold text-[#B0B0B0] absolute sm:text-[11pt] left-3 -top-4/12 bg-[#151515] px-0.5 ease-linear duration-300 sm:-top-[6%] md:top-[44%] text-[9pt]
 }
 
-.navInputs input {
+.navInputs input,
+textarea {
     @apply border-[#B0B0B0] border-2 outline-0 text-white px-3 py-0.5 ease-linear duration-300 sm:mt-4
 }
 
 .contentNavInputs .navInputs input:focus,
+.contentNavInputs .navInputs textarea:focus,
 .contentNavInputs .navInputs input:hover,
-.contentNavInputs .navInputs input:not(:placeholder-shown) {
+.contentNavInputs .navInputs textarea:hover,
+.contentNavInputs .navInputs input:not(:placeholder-shown)
+.contentNavInputs .navInputs textarea:not(:placeholder-shown) {
     @apply border-2 border-[#E10600]
 }
 
 .contentNavInputs .navInputs input:focus + label,
+.contentNavInputs .navInputs textarea:focus + label,
+.contentNavInputs .navInputs textarea:not(:placeholder-shown) + label,
 .contentNavInputs .navInputs input:not(:placeholder-shown) + label {
     @apply text-[#E10600]  md:top-[2%]
 }
